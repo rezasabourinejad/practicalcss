@@ -107,7 +107,17 @@ blockquote {
 cite {
   font-style: normal;
   display: block;
+  padding: 0;
   margin-top: -3px;
+}
+
+main {
+  margin-bottom: 4rem;
+}
+
+footer {
+  text-transform: uppercase;
+  margin-top: 5rem;
 }
 
 p {margin-bottom: 1rem;}

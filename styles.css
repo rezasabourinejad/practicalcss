@@ -94,6 +94,22 @@ img{
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+cite {
+  font-style: normal;
+  display: block;
+  margin-top: -3px;
+}
+
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
@@ -124,7 +140,7 @@ small, .text_small {font-size: calc(var(--base-size) / var(--scale));}
   font-size: var(--h5);
 }
 }
-@layer header{
+@layer header-banner-tour{
   .wrapper {
     max-width: 375px;
     border: 1px solid white;
@@ -137,13 +153,24 @@ small, .text_small {font-size: calc(var(--base-size) / var(--scale));}
   header img {
     max-width: 150px;
   }
-}
-@layer tour {
+  
   .date {
     color: var(--tan);
   }
-.club {
+
+  .club {
   color: var(--lime);
   font-size: var(--h5);
 }
+}
+@layer reviews {
+  .imggroup{
+    margin-top: 2rem;
+  }
+  
+  .star {
+    width: 18px;
+
+  }
+
 }

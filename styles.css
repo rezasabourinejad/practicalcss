@@ -196,3 +196,18 @@ small, .text_small {font-size: calc(var(--base-size) / var(--scale));}
     grid-area: 1 / 1 / 1 / 5;
   }
 }
+@media (min-width: 1025px) {
+  .wrapper {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+/* firs number (0) for gap from top & bottom (rows) | the second number gap between the child (columns) */
+    gap: 0 2rem;
+  }
+
+  main {
+    grid-area: 1/2/5/3;
+    display: block;
+    padding-top: 8rem;
+  }
+}

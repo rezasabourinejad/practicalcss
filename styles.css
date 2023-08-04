@@ -162,23 +162,7 @@ small, .text_small {font-size: calc(var(--base-size) / var(--scale));}
   color: var(--lime);
   font-size: var(--h5);
   }
-
-  @media (min-width: 800px) {
-    .wrapper {
-      max-width: 800px;
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-    main h1 {
-      /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
-      grid-area: 1 / 1 / 1 / 5;
-    }
-  }
 }
-
 @layer reviews {
   .imggroup{
     margin-top: 2rem;
@@ -197,4 +181,18 @@ small, .text_small {font-size: calc(var(--base-size) / var(--scale));}
     
   }
 
+}
+@media (min-width: 800px) {
+  .wrapper {
+    max-width: 800px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  main h1 {
+    /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+    grid-area: 1 / 1 / 1 / 5;
+  }
 }
